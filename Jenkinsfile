@@ -1,9 +1,9 @@
 pipeline{
-agent { label 'node1'}
+agent any
 stages{
 stage("mkdir"){
 steps{
-sh "mkdir /test/new"
+sh "ssh root@192.168.25.152 mkdir /test/new"
 }
 }
 }
