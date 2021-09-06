@@ -1,5 +1,5 @@
 pipeline{
-agent any
+node {'node1'}
 stages{
 stage("mkdir"){
 steps{
